@@ -27,7 +27,7 @@ app.get('/Reportes', (req, res) => {
 
 
 
-app.post('/', function(req, res) {
+app.post('/', (req, res) => {
     let Reporte = req.body
     ReportData.push(Reporte)
     res.send(JSON.stringify("Reporte Recibido"))
