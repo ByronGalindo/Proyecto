@@ -17,7 +17,7 @@ formElement.addEventListener("submit", (event) =>{
         ImagenEvento : ImagenEvento,
     }
     let DataEventJson = JSON.stringify(DataEvent);
-    fetch('http://localhost:3000', {
+    fetch('https://recupetbeta.herokuapp.com', {
         method : 'POST',
         body : DataEventJson
     })
